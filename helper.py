@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
 
-def get_df_from_csv(csv="SweepData/fpga_2_top_2021-06-21_10_16_47.csv", channel1=70,channel15=84)
+def get_df_from_csv(csv="SweepData/fpga_2_top_2021-06-21_10_16_47.csv", channel1=70,channel15=84):
     csv_file_name = csv
     df = pd.read_csv(csv_file_name,index_col=None, delimiter=',', header =0)
     return df
